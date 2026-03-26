@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Conversor de Unidades</h1>
+    <p>Imperial → Sistema Internacional</p>
+
+    <div class="tabs">
+        <button class="active" onclick="mudarTipo('comprimento')">Comprimento</button>
+        <button onclick="mudarTipo('massa')">Massa</button>
+        <button onclick="mudarTipo('volume')">Volume</button>
+        <button onclick="mudarTipo('velocidade')">Velocidade</button>
+    </div>
+
+    <input type="number" id="valor" placeholder="Digite o valor">
+
+    <div class="row">
+        <select id="de"></select>
+        <span>→</span>
+        <select id="para" disabled></select>
+    </div>
+
+    <button onclick="converter()">Converter</button>
+
+    <h2 id="resultado">Resultado aparecerá aqui</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
